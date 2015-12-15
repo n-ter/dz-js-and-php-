@@ -6,33 +6,25 @@ window.onload = function(){
         var inpX = document.getElementById('inpX');
         var inpY = document.getElementById('inpY');
         var spnResult = document.getElementById('spnResult');
-        var x = parseFloat(inpX.value);
-        var y = parseFloat(inpY.value);
-        var r = x + y;
-        spnResult.innerHTML =  r;
+  
+        spnResult.innerHTML =  parseFloat(inpX.value)+parseFloat(inpY.value);
 
         var inpZ = document.getElementById('inpZ');
         var inpC = document.getElementById('inpC');
         var spResult = document.getElementById('spResult');
-        var z = parseFloat(inpZ.value);
-        var c = parseFloat(inpC.value);
-        var rr = z - c;
+       
+        spResult.innerHTML =  parseFloat(inpZ.value)-parseFloat(inpC.value);
 
-        spResult.innerHTML =  rr;
         var inpXX = document.getElementById('inpXX');
         var inpYY = document.getElementById('inpYY');
         var spnNResult = document.getElementById('spnNResult');
-        var xx = parseFloat(inpXX.value);
-        var yy = parseFloat(inpYY.value);
-        var re = xx * yy;
-        
-        spnNResult.innerHTML =  re;
+       
+        spnNResult.innerHTML =  parseFloat(inpXX.value)*parseFloat(inpYY.value);
+
         var inpZZ = document.getElementById('inpZZ');
         var inpCC = document.getElementById('inpCC');
         var spRResult = document.getElementById('spnRResult');
-        var zz = parseFloat(inpZZ.value);
-        var cc = parseFloat(inpCC.value);
-        var rrr = zz / cc;
-        spnRResult.innerHTML =  rrr;
+       
+        spnRResult.innerHTML =  parseFloat(inpZZ.value)/parseFloat(inpCC.value);
     }
 }
