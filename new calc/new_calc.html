@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<HTML xmlns="http://www.w3.org/1999/xhtml" >
+<meta charset="utf-8">
+<HEAD>
+<TITLE>Страница</TITLE>
+<LINK rel="stylesheet" href="new_calc.css" type="text/css" />
+<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="new_calc.js"></SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<DIV><LABEL>Первое число:</LABEL><INPUT type="text" name="first" placeholder="Введите число"/></DIV>
+<DIV><LABEL>Второе число:</LABEL><INPUT type="text" name="second" placeholder="Введите число"/></DIV>
+<DIV><LABEL>Выберите действие:</LABEL>
+<SELECT name="action">
+<OPTION>+</OPTION>
+<OPTION>-</OPTION>
+<OPTION>*</OPTION>
+
+<OPTION>/</OPTION>
+</SELECT>
+</DIV>
+<DIV><INPUT type="button" name="send" value="Рассчитать"/></DIV>
+<DIV><LABEL>Результат:</LABEL><INPUT type="text" name="result" placeholder="Ответ"/></DIV>
+</FORM>
+  <div><input type="button" value=";) Нажми на меня" onclick="$('#span').css('display','')">
+    <span id="span" style="display:none;background:#00968E;padding:5px;color:#fff;">
+        Спасибо, что использовал(а) этот потрясающий калькулятор)))
+    </span> </div>
+</BODY>
+</HTML>
